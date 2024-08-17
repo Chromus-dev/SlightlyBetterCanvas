@@ -1,6 +1,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="popup.css" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+		/>
 	</head>
 	<body>
 		<h1>Slightly Better Canvas</h1>
@@ -12,7 +16,7 @@
 				<tr class="sbc-insta-modules">
 					<th>Insta-Modules</th>
 					<td>
-						<label class="switch">
+						<label class="switch" id="sbc-insta-modules-toggle">
 							<input type="checkbox" />
 							<span class="slider round"></span>
 						</label>
@@ -21,7 +25,10 @@
 				<tr class="sbc-no-dashboard-card-buttons">
 					<th>No Dashboard Card Buttons</th>
 					<td>
-						<label class="switch">
+						<label
+							class="switch"
+							id="sbc-no-dashboard-card-buttons-toggle"
+						>
 							<input type="checkbox" />
 							<span class="slider round"></span>
 						</label>
