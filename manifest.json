@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Slightly Better Canvas",
+	"description": "Slight changes to make Canvas slightly better",
+	"version": "1.0",
+	"action": {
+		"default_popup": "src/popup/popup.html",
+		"default_icon": "images/slightlyBetterCanvas.png"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["src/popup/popup.html", "src/popup/popup.css"],
+			"matches": ["*://*/*"],
+			"extension_ids": []
+		}
+	],
+	"background": {
+		"service_worker": "src/background.js"
+	},
+	"permissions": ["storage"],
+	"optional_host_permissions": ["<all_urls>"],
+	"host_permissions": ["*://*.instructure.com/*"]
+}
