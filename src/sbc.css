@@ -1,0 +1,7 @@
+.ic-DashboardCard__action-container {
+	height: 0;
+}
+
+.ic-DashboardCard__action {
+	display: none;
+}

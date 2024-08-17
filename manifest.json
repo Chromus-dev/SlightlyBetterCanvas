@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Slightly Better Canvas",
 	"description": "Slight changes to make Canvas slightly better",
-	"version": "1.0",
+	"version": "0.0.1",
 	"action": {
 		"default_popup": "src/popup/popup.html",
 		"default_icon": "images/slightlyBetterCanvas.png"
